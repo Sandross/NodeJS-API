@@ -5,17 +5,21 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "rimraf dist && tsc"
+    "build": "rimraf dist && tsc",
+    "start": "node dist/main/api"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@types/module-alias": "^2.0.1",
+    "@types/node": "^20.3.1",
     "typescript": "^5.1.3"
   },
   "engines": {
     "node": "16.x"
   },
   "dependencies": {
+    "module-alias": "^2.2.3",
     "rimraf": "^5.0.1"
   }
 }
