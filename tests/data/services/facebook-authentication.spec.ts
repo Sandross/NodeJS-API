@@ -1,17 +1,7 @@
+import { type LoadFacebookUserApi } from '@/data/contracts/apis'
 import { AuthenticationError } from '@/domain/errors'
 import { type FacebookAuthentication } from '@/domain/features'
 // command pattern aplicado em todos os parâmetros
-
-namespace LoadFacebookUserApi {
-  export type Params = {
-    token: string
-  }
-  export type Result = undefined
-}
-
-interface LoadFacebookUserApi {
-  loadUser: (params: LoadFacebookUserApi.Params) => Promise<LoadFacebookUserApi.Result>
-}
 
 class LoadFacebookUserApiSpy implements LoadFacebookUserApi {
   token?: string
