@@ -7,8 +7,7 @@ module.exports = {
     '@/(.+)': '<rootDir>/src/$1'
   },
   roots: [
-    '<rootDir>/src',
-    '<rootDir>/tests'
+    '<rootDir>/src'
   ],
   transform: {
     '\\.ts$': 'ts-jest'
